@@ -11,6 +11,8 @@ public float speed = 1f;
 Vector3 _originalPosition;
 bool isGoingLeft = false;
 public float distFromStart;
+
+
     public void Start()
     {
         _originalPosition = gameObject.transform.position;
