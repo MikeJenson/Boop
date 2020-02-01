@@ -1,0 +1,247 @@
+fileFormatVersion: 2
+guid: e74ae3ff661a7eb4195e0a80c50f34bb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8261901302417651212
+    second: claire-idle-v2-bits_0
+  - first:
+      213: -738401493338147355
+    second: claire-idle-v2-bits_1
+  - first:
+      213: 4989349357309154039
+    second: claire-idle-v2-bits_2
+  - first:
+      213: 7336064450426033012
+    second: claire-idle-v2-bits_3
+  - first:
+      213: -5644284666535558766
+    second: claire-idle-v2-bits_4
+  - first:
+      213: -7880085577514261961
+    second: claire-idle-v2-bits_5
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 535
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: claire-idle-v2-bits_0
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 451
+        width: 377
+        height: 393
+      alignment: 9
+      pivot: {x: 0.5279584, y: 0.45402282}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 772f55850548e17469a773b87e2230c4
+      internalID: 8261901302417651212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: claire-idle-v2-bits_1
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 189
+        width: 102
+        height: 148
+      alignment: 9
+      pivot: {x: 0.8395339, y: 0.90696204}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e580abd31b7d31442a6ca4d2955635d2
+      internalID: -738401493338147355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: claire-idle-v2-bits_2
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 179
+        width: 232
+        height: 241
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b94447b3be723c47b3ca3d00c5c2068
+      internalID: 4989349357309154039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: claire-idle-v2-bits_3
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 192
+        width: 102
+        height: 141
+      alignment: 9
+      pivot: {x: 0.17522834, y: 0.93784523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cad1db6dfc41fd443a151c427a49831f
+      internalID: 7336064450426033012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: claire-idle-v2-bits_4
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 54
+        width: 34
+        height: 110
+      alignment: 9
+      pivot: {x: 0.4999991, y: 0.88328415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b9a669d38d87b24488a5db7de047a0f
+      internalID: -5644284666535558766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: claire-idle-v2-bits_5
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 53
+        width: 34
+        height: 109
+      alignment: 9
+      pivot: {x: 0.5000009, y: 0.88680077}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ee6af8994ae5241941a0aedd877390
+      internalID: -7880085577514261961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

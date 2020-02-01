@@ -3,20 +3,47 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class enemyController : MonoBehaviour
-{
-    public GameObject target; //the enemy's target
-    public float moveSpeed = 10; //move speed
-    public float rotationSpeed = 5; //speed of turning
-    private Rigidbody2D rb;
-    void Start()
+{ 
+protected Vector3 velocity;
+public Transform _transform;
+public float distance = 5f;
+public float speed = 1f;
+Vector3 _originalPosition;
+bool isGoingLeft = false;
+public float distFromStart;
+    public void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        _originalPosition = gameObject.transform.position;
+        _transform = GetComponent<Transform>();
+        velocity = new Vector3(speed, 0, 0);
+        _transform.Translate(velocity.x * Time.deltaTime, 0, 0);
     }
+
     void Update()
+{
+    distFromStart = transform.position.x - _originalPosition.x;
+
+    if (isGoingLeft)
     {
-        //rotate to look at the player
-        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(target.transform.position - transform.position), rotationSpeed * Time.deltaTime);
-        //move towards the player
-        transform.position += transform.forward * Time.deltaTime * moveSpeed;
+        // If gone too far, switch direction
+        if (distFromStart < -distance)
+            SwitchDirection();
+
+        _transform.Translate(-velocity.x * Time.deltaTime, 0, 0);
+    }
+    else
+    {
+        // If gone too far, switch direction
+        if (distFromStart > distance)
+            SwitchDirection();
+
+        _transform.Translate(velocity.x * Time.deltaTime, 0, 0);
+    }
+}
+
+    void SwitchDirection()
+    {
+        isGoingLeft = !isGoingLeft;
+        //TODO: Change facing direction, animation, etc
     }
 }
