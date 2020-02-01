@@ -12,6 +12,8 @@ public class moveMe : MonoBehaviour
     bool jump = false;
     bool crouch = false;
 
+    private Animator anim;
+
     // Update is called once per frame
     void Update()
     {
@@ -31,6 +33,16 @@ public class moveMe : MonoBehaviour
         {
             crouch = false;
         }
+
+       /* if (horizontalMove == 0)
+        {
+            anim.SetBool("isRunning", false);
+        }
+        else
+        {
+            anim.SetBool("isRunning", true);
+        } */
+
 
     }
 
