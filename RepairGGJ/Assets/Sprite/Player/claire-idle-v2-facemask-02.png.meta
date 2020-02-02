@@ -1,7 +1,25 @@
 fileFormatVersion: 2
 guid: 2c14ac6293c510b4b9aae0cc1c78995d
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3981538913018337832
+    second: claire-idle-v2-facemask-02_0
+  - first:
+      213: 6777142922788825967
+    second: claire-idle-v2-facemask-02_1
+  - first:
+      213: -1655439035639163522
+    second: claire-idle-v2-facemask-02_2
+  - first:
+      213: -2790062067979535333
+    second: claire-idle-v2-facemask-02_3
+  - first:
+      213: 741737808929065868
+    second: claire-idle-v2-facemask-02_4
+  - first:
+      213: 4936653516649108786
+    second: claire-idle-v2-facemask-02_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,12 +58,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 535
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,9 +88,147 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: claire-idle-v2-facemask-02_0
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 451
+        width: 377
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ceb81371928e434d80f5a9511b1ba92
+      internalID: -3981538913018337832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: claire-idle-v2-facemask-02_1
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 189
+        width: 102
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ff2240cf9695614aabac0838eccbcff
+      internalID: 6777142922788825967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: claire-idle-v2-facemask-02_2
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 179
+        width: 232
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7939dd7f28249b4e904d488f9b01289
+      internalID: -1655439035639163522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: claire-idle-v2-facemask-02_3
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 192
+        width: 102
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64bbcdf973f51da49a518f1a0265a6d7
+      internalID: -2790062067979535333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: claire-idle-v2-facemask-02_4
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 54
+        width: 34
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd4863422e5a276448d161afe98cb0b5
+      internalID: 741737808929065868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: claire-idle-v2-facemask-02_5
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 53
+        width: 34
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80136f622d77ea74b8de4607823ae292
+      internalID: 4936653516649108786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

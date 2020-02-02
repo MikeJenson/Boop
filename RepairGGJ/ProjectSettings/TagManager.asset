@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Enemy
   - Grass
+  - Mask
+  - Coffee
   layers:
   - Default
   - TransparentFX
