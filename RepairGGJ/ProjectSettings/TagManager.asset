@@ -8,6 +8,7 @@ TagManager:
   - Grass
   - Mask
   - Coffee
+  - Boundry
   layers:
   - Default
   - TransparentFX

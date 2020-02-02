@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class playerHealth : MonoBehaviour
 {
@@ -19,6 +20,8 @@ public class playerHealth : MonoBehaviour
 
     public GameObject loseMenu;
     public GameObject winMenu;
+
+    public AudioSource coffee_snd;
 
     private void Awake()
     {
@@ -95,6 +98,15 @@ public class playerHealth : MonoBehaviour
             }
         }
 
+        {
+            if (other.gameObject.CompareTag("Boundry"))
+            {
+                animdead.SetBool("isDead", true);
+                Destroy(gameObject);
+                lose();
+            }
+        }
+
         if (other.gameObject.CompareTag("Grass"))
         {
             Destroy(other.gameObject);
@@ -104,9 +116,10 @@ public class playerHealth : MonoBehaviour
 
         if (other.gameObject.CompareTag("Coffee"))
         {
-            Destroy(other.gameObject);
+            coffee_snd.Play();
             runScript.runSpeed = 30f;
             coffeeTimer = 30f;
+            Destroy(other.gameObject);
         }
 
         if (other.gameObject.CompareTag("Mask"))
@@ -124,7 +137,8 @@ public class playerHealth : MonoBehaviour
             win();
         }
     }
-    public void win()
+
+        public void win()
     {
         winMenu.SetActive(true);
     }
