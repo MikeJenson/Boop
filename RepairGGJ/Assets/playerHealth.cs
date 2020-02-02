@@ -62,16 +62,18 @@ public class playerHealth : MonoBehaviour
                 NoMaskSprite = Resources.LoadAll<Sprite>("noMask");
                 GameObject Mask = new GameObject();
                 face.sprite = NoMaskSprite[0];
+                health = 1;
             }
         }
 
         if (gameTimer >= 0.0f)
         {
-            wheatTimer -= Time.deltaTime;
+            gameTimer -= Time.deltaTime;
 
             if (gameTimer < 0.0f)
             {
                 animdead.SetBool("isDead", true);
+                Destroy(gameObject);
             }
         }
 
@@ -112,6 +114,7 @@ public class playerHealth : MonoBehaviour
             GameObject Mask = new GameObject();
             face.sprite = MaskSprite[0];
             maskTimer = 30f;
+            health = 100;
         }
 
         if (other.gameObject.CompareTag("Finish"))
