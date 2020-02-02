@@ -21,7 +21,11 @@ public class playerHealth : MonoBehaviour
     public GameObject loseMenu;
     public GameObject winMenu;
 
-    public AudioSource coffee_snd;
+    public GameObject CoffeeSound;
+    public GameObject WheatSound;
+    public GameObject MaskSound;
+    public GameObject BadVibesSound;
+    public GameObject WinSound;
 
     private void Awake()
     {
@@ -109,6 +113,7 @@ public class playerHealth : MonoBehaviour
 
         if (other.gameObject.CompareTag("Grass"))
         {
+            Instantiate(WheatSound, transform.position, Quaternion.identity);
             Destroy(other.gameObject);
             jumpScript.m_JumpForce = 700f;
             wheatTimer = 30f;
@@ -116,7 +121,7 @@ public class playerHealth : MonoBehaviour
 
         if (other.gameObject.CompareTag("Coffee"))
         {
-            coffee_snd.Play();
+            Instantiate(CoffeeSound, transform.position, Quaternion.identity);
             runScript.runSpeed = 30f;
             coffeeTimer = 30f;
             Destroy(other.gameObject);
@@ -124,6 +129,7 @@ public class playerHealth : MonoBehaviour
 
         if (other.gameObject.CompareTag("Mask"))
         {
+            Instantiate(MaskSound, transform.position, Quaternion.identity);
             Destroy(other.gameObject);
             MaskSprite = Resources.LoadAll<Sprite>("Mask");
             GameObject Mask = new GameObject();
@@ -140,10 +146,12 @@ public class playerHealth : MonoBehaviour
 
         public void win()
     {
+        Instantiate(WinSound, transform.position, Quaternion.identity);
         winMenu.SetActive(true);
     }
     public void lose()
     {
+        Instantiate(BadVibesSound, transform.position, Quaternion.identity);
         loseMenu.SetActive(true);
     }
 }
