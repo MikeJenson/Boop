@@ -8,4 +8,5 @@ You are Karen. Your life is hard. Boop is the only lifestyle brand that really k
 Credits:
 
 Programming and Game Dev: Mikel Jenson
+
 Game Design and Assets: Kia Anne Geraths
