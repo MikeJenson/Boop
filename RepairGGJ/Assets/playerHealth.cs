@@ -5,6 +5,9 @@ using UnityEngine;
 public class playerHealth : MonoBehaviour
 {
     public int health = 1;
+    private bool gotCoffee = false;
+    private bool gotWheat = false;
+    private GameObject.GetComponent<moveMe>.runSpeed;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +30,13 @@ public class playerHealth : MonoBehaviour
 
         if (other.gameObject.CompareTag("Grass"))
         {
+
+            Destroy(other.gameObject);
+        }
+
+        if (other.gameObject.CompareTag("Coffee"))
+        {
+            Destroy(other.gameObject);
 
         }
     }
