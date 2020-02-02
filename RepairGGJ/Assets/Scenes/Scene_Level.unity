@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 171482632}
   - component: {fileID: 171482636}
   - component: {fileID: 171482635}
+  - component: {fileID: 171482637}
   m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
@@ -170,7 +171,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.09085196}
+  m_Offset: {x: -0.0058619976, y: 0.09085196}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -181,7 +182,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.70280373, y: 0.8182961}
+  m_Size: {x: 0.49176836, y: 0.8524233}
   m_EdgeRadius: 0
 --- !u!50 &171482634
 Rigidbody2D:
@@ -247,6 +248,19 @@ MonoBehaviour:
   OnCrouchEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &171482637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171482631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db9ad0b1c1dcca84ea8c2758efcadb75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1
 --- !u!4 &171482638
 Transform:
   m_ObjectHideFlags: 0
@@ -885,7 +899,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0.00390625, z: 0}
+  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -1729,7 +1743,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1543727946}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.014, y: 0.455, z: 0}
+  m_LocalPosition: {x: -0.014, y: 0.376, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 171482638}
@@ -2060,6 +2074,21 @@ PrefabInstance:
       propertyPath: distance
       value: 0.8
       objectReference: {fileID: 0}
+    - target: {fileID: 7712685115047370504, guid: 3513ba7f9cd70ec4eb554e85ba4d85e7,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7712685115047370504, guid: 3513ba7f9cd70ec4eb554e85ba4d85e7,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7712685115047370504, guid: 3513ba7f9cd70ec4eb554e85ba4d85e7,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3513ba7f9cd70ec4eb554e85ba4d85e7, type: 3}
 --- !u!1001 &7712685115916967064
@@ -2138,6 +2167,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 7712685115047370504, guid: 3513ba7f9cd70ec4eb554e85ba4d85e7,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7712685115047370504, guid: 3513ba7f9cd70ec4eb554e85ba4d85e7,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7712685115047370504, guid: 3513ba7f9cd70ec4eb554e85ba4d85e7,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2754210502507534378, guid: 3513ba7f9cd70ec4eb554e85ba4d85e7,
         type: 3}
