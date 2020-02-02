@@ -10,8 +10,8 @@ public class MainMenuController : MonoBehaviour
         SceneManager.LoadScene("Scene_Level");
     }
 
-    public void instructions()
+    public void home()
     {
-
+        SceneManager.LoadScene("MainMenu");
     }
 }

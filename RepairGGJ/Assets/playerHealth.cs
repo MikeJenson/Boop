@@ -5,9 +5,6 @@ using UnityEngine;
 public class playerHealth : MonoBehaviour
 {
     public int health = 1;
-    private bool gotCoffee = false;
-    private bool gotWheat = false;
-    private bool gotMask = false;
     private float maskTimer = 0f;
     private float coffeeTimer = 0f;
     private float wheatTimer = 0f;
@@ -19,6 +16,9 @@ public class playerHealth : MonoBehaviour
 
     public moveMe runScript;
     public CharacterController2D jumpScript;
+
+    public GameObject loseMenu;
+    public GameObject winMenu;
 
     private void Awake()
     {
@@ -74,6 +74,7 @@ public class playerHealth : MonoBehaviour
             {
                 animdead.SetBool("isDead", true);
                 Destroy(gameObject);
+                lose();
             }
         }
 
@@ -83,21 +84,22 @@ public class playerHealth : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            Debug.Log("Text");
+            Destroy(other.gameObject);
             health -= 1;
 
             if (health <= 0)
             {
                 animdead.SetBool("isDead", true);
+                Destroy(gameObject);
+                lose();
             }
         }
 
         if (other.gameObject.CompareTag("Grass"))
         {
             Destroy(other.gameObject);
-            jumpScript.m_JumpForce = 500f;
+            jumpScript.m_JumpForce = 700f;
             wheatTimer = 30f;
-            Debug.Log("timerset");
         }
 
         if (other.gameObject.CompareTag("Coffee"))
@@ -119,8 +121,15 @@ public class playerHealth : MonoBehaviour
 
         if (other.gameObject.CompareTag("Finish"))
         {
-            //TODO UI victory
+            win();
         }
     }
-
+    public void win()
+    {
+        winMenu.SetActive(true);
+    }
+    public void lose()
+    {
+        loseMenu.SetActive(true);
+    }
 }
